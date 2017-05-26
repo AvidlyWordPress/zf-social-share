@@ -1,0 +1,63 @@
+$color-white: #fff;
+$color-facebook: #3b5998;
+$color-twitter: #1da1f2;
+$color-linkedin: #0077B5;
+
+
+@mixin social_link( $service, $color ) {
+
+  &[href*="#{$service}"] {
+	background-color: $color;
+	border-radius: 2px;
+	color: $color-white;
+	transition: background-color linear .2s;
+
+	&:hover {
+		background-color: darken( $color, 15 );
+	}
+
+  }
+
+}
+
+.zf-social-links {
+	margin-top: 3rem;
+	text-align: right;
+}
+
+.zf-social-links svg {
+	fill: $color-white;
+	height: 24px;
+	padding-top: 8px;
+	width: 21px;
+}
+
+.zf-social-links .screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.social-links__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+.social-links__item {
+	display: inline-block;
+	margin-left: 0.25rem;
+}
+
+.social-links__link {
+	display: block;
+	padding: 6px 12px;
+	text-decoration: none;
+
+	@include social_link( facebook, $color-facebook );
+	@include social_link( twitter, $color-twitter );
+	@include social_link( linkedin, $color-linkedin );
+}
