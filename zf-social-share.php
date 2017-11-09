@@ -1,8 +1,8 @@
 <?php
 /*
 * Plugin Name: ZF Social Share Links
-* Description: Twitter, Facebook and LinkedIn social share links. Use with zfss_social_share() inside template file.
-* Version: 1.0
+* Description: Twitter, Facebook, LinkedIn and Pinterest social share links. Use with zfss_social_share(); inside template file.
+* Version: 1.1
 * Author: Zeeland Family
 * License: GPL2
 * License URI: https://www.gnu.org/licenses/gpl-2.0.html
