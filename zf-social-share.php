@@ -30,6 +30,16 @@ add_action( 'wp_enqueue_scripts', 'zfss_share_styles' );
 
 
 /**
+ * pinit.js for Pinterest.
+ */
+function zfss_pinterest_js() {
+
+	wp_enqueue_script( 'zf-share-pinterest-js', '//assets.pinterest.com/js/pinit.js', '', '', true );
+}
+add_action( 'wp_enqueue_scripts', 'zfss_pinterest_js' );
+
+
+/**
  * Add SVG definitions to the footer (code from Twenty Seventeen theme).
  */
 function zfss_share_svg_icons() {
