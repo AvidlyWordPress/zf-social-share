@@ -20,6 +20,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 /**
+ * Customizer settings.
+ */
+require_once( plugin_dir_path( __FILE__ ) . 'zf-social-share-customizer.php' );
+
+
+/**
  * Load styles.
  */
 function zfss_share_styles() {

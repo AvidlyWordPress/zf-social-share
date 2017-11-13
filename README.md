@@ -15,12 +15,18 @@ By default share buttons are not visible on the website.
 zfss_social_share();
 ```
 
+**3. Select which buttons you want to display from Customizer**
+
 After this you should see the share buttons:
 
 ![social-share-demo](https://user-images.githubusercontent.com/11228741/32596445-f7e7c200-c53b-11e7-8e4a-00c5fc491b50.png)
 
 
 ## Version history
+
+**1.2**
+* Added settings for Customizer
+
 **1.1**
 * Added Pinterest share button
 
