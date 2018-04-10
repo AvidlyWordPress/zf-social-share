@@ -24,6 +24,9 @@ After this you should see the share buttons:
 
 ## Version history
 
+**1.3**
+* Added Email share button and minified CSS
+
 **1.2**
 * Added settings for Customizer
 

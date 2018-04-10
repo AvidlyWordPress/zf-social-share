@@ -2,7 +2,7 @@
 /*
 * Plugin Name: ZF Social Share Links
 * Description: Twitter, Facebook, LinkedIn and Pinterest social share links. Use with zfss_social_share(); inside template file.
-* Version: 1.2
+* Version: 1.3
 * Author: Zeeland Family
 * License: GPL2
 * License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -30,7 +30,7 @@ require_once( plugin_dir_path( __FILE__ ) . 'zf-social-share-customizer.php' );
  */
 function zfss_share_styles() {
 
-	wp_enqueue_style( 'zf-share-css', plugins_url( '/assets/styles/css/style.css', __FILE__ ) );
+	wp_enqueue_style( 'zf-share-css', plugins_url( '/assets/styles/css/style.min.css', __FILE__ ) );
 }
 add_action( 'wp_enqueue_scripts', 'zfss_share_styles' );
 

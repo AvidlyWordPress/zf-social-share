@@ -9,9 +9,9 @@ function zfss_customize_register( $wp_customize ) {
 
 	$i = 0;
 
-	$social_media_names = array( 'facebook', 'twitter', 'linkedin', 'pinterest' );
+	$social_media_names = array( 'facebook', 'twitter', 'linkedin', 'pinterest', 'email' );
 
-	$social_media_labels = array( 'Facebook', 'Twitter', 'LinkedIn', 'Pinterest' );
+	$social_media_labels = array( 'Facebook', 'Twitter', 'LinkedIn', 'Pinterest', 'Email' );
 
 	$wp_customize->add_section( $prefix . 'settings', array(
 		'title'    => __( 'Social Share Buttons', 'zfss' ),

@@ -71,6 +71,21 @@
 
 	<?php endif; ?>
 
+	<?php if ( true === get_theme_mod( 'zfss_email_checkbox' ) ) : ?>
+
+		<li class="social-links__item social-links__item--email" >
+			<a href="mailto:?Subject=<?php the_title(); ?>&amp;Body=<?php echo esc_url( get_permalink( get_the_ID() ) ); ?>" class="social-links__link--email">
+				<?php
+				echo zfss_share_get_svg( array(
+					'icon'  => 'envelope-o',
+					'title' => __( 'Email', 'zf-social-share' ),
+				) );
+				?>
+			</a>
+		</li>
+
+	<?php endif; ?>
+
 </ul>
 
 </div><!--/zf-social-links-->

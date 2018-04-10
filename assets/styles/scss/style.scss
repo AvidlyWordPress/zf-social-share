@@ -3,6 +3,7 @@ $color-facebook: #3b5998;
 $color-twitter: #1da1f2;
 $color-linkedin: #0077B5;
 $color-pinterest: #c92228;
+$color-email: #44bb15;
 
 
 @mixin social_link( $service, $color ) {
@@ -63,4 +64,10 @@ $color-pinterest: #c92228;
 	@include social_link( twitter, $color-twitter );
 	@include social_link( linkedin, $color-linkedin );
 	@include social_link( pinterest, $color-pinterest );
+	@include social_link( email, $color-email );
+}
+
+
+.social-links__link--email svg {
+	padding-top: 6px;
 }
